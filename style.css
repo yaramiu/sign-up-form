@@ -5,9 +5,11 @@
 
 body {
   margin: 0;
+  display: flex;
 }
 
 .photo,
+.photo-logo-block,
 .logo-block {
   width: 500px;
 }
@@ -44,4 +46,21 @@ body {
 
 .logo {
   height: 80%;
+}
+
+.text-block {
+  height: 250px;
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9fafb;
+}
+
+p {
+  margin: 20px;
+  font-weight: bold;
+}
+
+.p1 {
+  margin-top: 100px;
+  margin-right: 275px;
 }
