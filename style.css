@@ -134,6 +134,13 @@ input[type] {
 input:focus {
   border: 1px solid blue;
   outline: none;
+  box-shadow: 1px 1px 1px 1px darkgray;
+}
+
+span {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 220px;
 }
 
 .submit-signup-block {

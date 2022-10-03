@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="password-validation.js"></script>
+  <script src="password-validation.js" defer></script>
 </head>
 
 <body>
@@ -65,13 +65,14 @@
           <div class="password-form">
             <label for="password">PASSWORD</label>
             <br />
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" class="password" />
+            <span class="password-match"></span>
           </div>
 
           <div class="confirm-password-form">
             <label for="confirm-password">CONFIRM PASSWORD</label>
             <br />
-            <input type="password" name="confirm-password" id="confirm-password" />
+            <input type="password" name="confirm-password" id="confirm-password" class="confirm-password" />
           </div>
         </div>
       </form>
