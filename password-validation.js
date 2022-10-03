@@ -4,17 +4,15 @@ const span = document.querySelector(".password-match");
 
 const submitButton = document.querySelector(".submit-button");
 submitButton.addEventListener("click", () => {
-  const isMatchingPasswords = checkPasswordsMatch();
+  const isMatchingPasswords =
+    passwordElement.value === confirmPasswordElement.value;
+
   if (!isMatchingPasswords) {
     addErrorStyles();
   } else {
     removeErrorStyles();
   }
 });
-
-function checkPasswordsMatch() {
-  return passwordElement.value === confirmPasswordElement.value;
-}
 
 function removeErrorStyles() {
   passwordElement.classList.remove("error");

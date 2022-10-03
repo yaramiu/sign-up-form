@@ -1,14 +1,9 @@
-@font-face {
-  font-family: norse-bold;
-  src: url(./fonts/Norse-Bold.otf);
-}
-
 :root {
   --clear-fonts: Arial, Helvetica, sans-serif;
-  --photo-size: 500px;
   --top-and-right-margins: 3vh 0 0 3vw;
-  --top-and-right-padding: var(--top-and-right-margins);
   --round-borders: 4px;
+  --top-and-bottom-block-background-color: #efdecd;
+  --button-color: #3882f6;
 }
 
 body {
@@ -19,7 +14,7 @@ body {
 .photo,
 .photo-logo-block,
 .logo-block {
-  width: var(--photo-size);
+  width: 500px;
 }
 
 .photo-logo-block {
@@ -33,7 +28,7 @@ body {
 }
 
 .logo-block {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 160px;
   display: flex;
@@ -48,8 +43,8 @@ body {
 .logo-text {
   margin: 0;
   color: white;
-  font-size: 5rem;
-  font-family: norse-bold;
+  font-size: 1.8rem;
+  font-family: var(--clear-fonts);
 }
 
 .logo {
@@ -60,7 +55,7 @@ body {
   height: 260px;
   font-size: 1.5vw;
   font-family: var(--clear-fonts);
-  background-color: #f9fafb;
+  background-color: var(--top-and-bottom-block-background-color);
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
@@ -71,7 +66,7 @@ body {
   margin: 0;
   padding: 30px;
   font-weight: bold;
-  background-color: #f9fafb;
+  background-color: var(--top-and-bottom-block-background-color);
 }
 
 .p1 {
@@ -137,8 +132,8 @@ input:focus {
   box-shadow: 1px 1px 1px 1px darkgray;
 }
 
-span {
-  font-size: 0.7rem;
+span.password-match {
+  font-size: 0.8rem;
   position: absolute;
   top: 220px;
 }
@@ -146,12 +141,12 @@ span {
 .submit-signup-block {
   position: relative;
   z-index: 10;
-  background-color: #f9fafb;
+  background-color: var(--top-and-bottom-block-background-color);
   height: 26vh;
 }
 
 .padding-container {
-  padding: var(--top-and-right-padding);
+  padding: var(--top-and-right-margins);
 }
 
 .submit-button,
@@ -160,7 +155,7 @@ span {
 }
 
 .submit-button {
-  background-color: #596d48;
+  background-color: var(--button-color);
   color: white;
   padding: 1.5vh 2.5vw;
   font-family: var(--clear-fonts);
@@ -175,5 +170,5 @@ span {
 }
 
 .log-in {
-  color: #596d48;
+  color: var(--button-color);
 }
