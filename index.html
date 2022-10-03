@@ -1,94 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sign Up Form</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="password-validation.js"></script>
-  </head>
 
-  <body>
-    <div class="photo-logo-block">
-      <div class="logo-block">
-        <img
-          src="./images/odin-lined.png"
-          alt="The Odin Project logo"
-          class="logo"
-        />
-        <p class="logo-text">ODIN</p>
-      </div>
-      <img
-        src="./images/photo-1585202900225-6d3ac20a6962.avif"
-        alt="Green plant leaves"
-        class="photo"
-      />
+<head>
+  <meta charset="UTF-8" />
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="password-validation.js"></script>
+</head>
+
+<body>
+  <div class="photo-logo-block">
+    <div class="logo-block">
+      <img src="./images/odin-lined.png" alt="The Odin Project logo" class="logo" />
+      <p class="logo-text">ODIN</p>
+    </div>
+    <img src="./images/photo-1585202900225-6d3ac20a6962.avif" alt="Green plant leaves" class="photo" />
+  </div>
+
+  <div class="right-side">
+    <div class="text-block">
+      <p class="p1">
+        This is not a real online service! You know you need something like
+        this in your life to help you realize your deepest dreams. Sign up
+        <em>now</em>
+        to get started.
+      </p>
+
+      <p class="p2">You <em>know</em> you want to.</p>
     </div>
 
-    <div class="right-side">
-      <div class="text-block">
-        <p class="p1">
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up
-          <em>now</em>
-          to get started.
-        </p>
+    <div class="form-block">
+      <form action="" method="get">
+        <legend>Let's do this!</legend>
 
-        <p class="p2">You <em>know</em> you want to.</p>
-      </div>
-
-      <div class="form-block">
-        <form action="" method="get">
-          <legend>Let's do this!</legend>
-
-          <div class="first-row">
-            <div class="first-name-form">
-              <label for="first-name">FIRST NAME</label>
-              <br />
-              <input type="text" name="first-name" id="first-name" />
-            </div>
-
-            <div class="last-name-form">
-              <label for="last-name">LAST NAME</label>
-              <br />
-              <input type="text" name="last-name" id="last-name" />
-            </div>
+        <div class="first-row">
+          <div class="first-name-form">
+            <label for="first-name">FIRST NAME</label>
+            <br />
+            <input type="text" name="first-name" id="first-name" />
           </div>
 
-          <div class="second-row">
-            <div class="email-form">
-              <label for="email">EMAIL</label>
-              <br />
-              <input type="email" name="email" id="email" />
-            </div>
+          <div class="last-name-form">
+            <label for="last-name">LAST NAME</label>
+            <br />
+            <input type="text" name="last-name" id="last-name" />
+          </div>
+        </div>
 
-            <div class="phone-number-form">
-              <label for="phone-number">PHONE NUMBER</label>
-              <br />
-              <input type="tel" name="phone-number" id="phone-number" />
-            </div>
+        <div class="second-row">
+          <div class="email-form">
+            <label for="email">EMAIL</label>
+            <br />
+            <input type="email" name="email" id="email" />
           </div>
 
-          <div class="third-row">
-            <div class="password-form">
-              <label for="password">PASSWORD</label>
-              <br />
-              <input type="password" name="password" id="password" />
-            </div>
-
-            <div class="confirm-password-form">
-              <label for="confirm-password">CONFIRM PASSWORD</label>
-              <br />
-              <input
-                type="password"
-                name="confirm-password"
-                id="confirm-password"
-              />
-            </div>
+          <div class="phone-number-form">
+            <label for="phone-number">PHONE NUMBER</label>
+            <br />
+            <input type="tel" name="phone-number" id="phone-number" />
           </div>
-        </form>
-      </div>
+        </div>
 
-      <div class="submit-block signup-block"></div>
+        <div class="third-row">
+          <div class="password-form">
+            <label for="password">PASSWORD</label>
+            <br />
+            <input type="password" name="password" id="password" />
+          </div>
+
+          <div class="confirm-password-form">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <br />
+            <input type="password" name="confirm-password" id="confirm-password" />
+          </div>
+        </div>
+      </form>
     </div>
-  </body>
+
+    <div class="submit-signup-block">
+      <div class="padding-container">
+        <button type="submit" class="submit-button">Create Account</button>
+
+        <p class="p3">
+          Already have an account? <span class="log-in">Log in</span>
+      </div>
+      </p>
+    </div>
+  </div>
+</body>
+
 </html>
