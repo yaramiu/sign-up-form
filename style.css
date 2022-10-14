@@ -9,6 +9,7 @@
 body {
   margin: 0;
   display: flex;
+  overflow: hidden;
 }
 
 .photo,
@@ -142,7 +143,7 @@ span.password-match {
   position: relative;
   z-index: 10;
   background-color: var(--top-and-bottom-block-background-color);
-  height: 26vh;
+  height: 29vh;
 }
 
 .padding-container {
