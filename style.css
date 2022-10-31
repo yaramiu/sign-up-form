@@ -100,7 +100,7 @@ form {
   column-gap: 100px;
 }
 
-legend,
+h3,
 label[for] {
   color: #1f2937;
   font-family: var(--clear-fonts);
@@ -111,7 +111,8 @@ label[for] {
   font-weight: 600;
 }
 
-legend {
+h3 {
+  margin: 0;
   font-size: 1.6vw;
   font-weight: bold;
 }

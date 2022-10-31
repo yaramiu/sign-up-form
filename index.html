@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./images/title-icon.png" />
+    <script src="password-validation.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Sign Up Form</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="./images/title-icon.png" />
-  <script src="password-validation.js" defer></script>
-</head>
-
-<body>
-  <div class="photo-logo-block">
-    <div class="logo-block">
-      <img src="./images/title-icon.png" alt="A small green pouch tied with an orange rope" class="logo" />
-      <p class="logo-text">Sierokarte's Knickknack Shack</p>
-    </div>
-    <img src="./images/sierokarte-sign-up.png"
-      alt="Djeeta, Lyria, Vyrn, Io, Katalina, and Sierokarte grouped around a table with forms on it" class="photo" />
-  </div>
-
-  <div class="right-side">
-    <div class="text-block">
-      <p class="p1">
-        Join the many satisfied skyfarers by signing up for Sierokarte's Knickknack Shack! You'll gain access to a ton
-        of services online and signing up is quick and easy.
-      </p>
-
-      <p class="p2">What are you waiting for?</p>
-    </div>
-
-    <div class="form-block">
-      <form action="" method="get">
-        <legend>Let's do this!</legend>
-
-        <div class="first-row">
-          <div class="first-name-form">
-            <label for="first-name">FIRST NAME</label>
-            <br />
-            <input type="text" name="first-name" id="first-name" />
-          </div>
-
-          <div class="last-name-form">
-            <label for="last-name">LAST NAME</label>
-            <br />
-            <input type="text" name="last-name" id="last-name" />
-          </div>
-        </div>
-
-        <div class="second-row">
-          <div class="email-form">
-            <label for="email">EMAIL</label>
-            <br />
-            <input type="email" name="email" id="email" />
-          </div>
-
-          <div class="phone-number-form">
-            <label for="phone-number">PHONE NUMBER</label>
-            <br />
-            <input type="tel" name="phone-number" id="phone-number" />
-          </div>
-        </div>
-
-        <div class="third-row">
-          <div class="password-form">
-            <label for="password">PASSWORD</label>
-            <br />
-            <input type="password" name="password" id="password" class="password" />
-            <span class="password-match"></span>
-          </div>
-
-          <div class="confirm-password-form">
-            <label for="confirm-password">CONFIRM PASSWORD</label>
-            <br />
-            <input type="password" name="confirm-password" id="confirm-password" class="confirm-password" />
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div class="submit-signup-block">
-      <div class="padding-container">
-        <button type="submit" class="submit-button">Create Account</button>
-
-        <p class="p3">
-          Already have an account? <span class="log-in">Log in</span>
+  <body>
+    <div class="photo-logo-block">
+      <div class="logo-block">
+        <img
+          src="./images/title-icon.png"
+          alt="A small green pouch tied with an orange rope"
+          class="logo"
+        />
+        <p class="logo-text">Sierokarte's Knickknack Shack</p>
       </div>
-      </p>
+      <img
+        src="./images/sierokarte-sign-up.png"
+        alt="Djeeta, Lyria, Vyrn, Io, Katalina, and Sierokarte grouped around a table with forms on it"
+        class="photo"
+      />
     </div>
-  </div>
-</body>
 
+    <div class="right-side">
+      <div class="text-block">
+        <p class="p1">
+          Join the many satisfied skyfarers by signing up for Sierokarte's
+          Knickknack Shack! You'll gain access to a ton of services online and
+          signing up is quick and easy.
+        </p>
+
+        <p class="p2">What are you waiting for?</p>
+      </div>
+
+      <div class="form-block">
+        <form action="#" method="get">
+          <script>
+            document.querySelector(".form-block").setAttribute("action", "");
+          </script>
+          <h3>Let's do this!</h3>
+
+          <div class="first-row">
+            <div class="first-name-form">
+              <label for="first-name">FIRST NAME</label>
+              <br />
+              <input type="text" name="first-name" id="first-name" />
+            </div>
+
+            <div class="last-name-form">
+              <label for="last-name">LAST NAME</label>
+              <br />
+              <input type="text" name="last-name" id="last-name" />
+            </div>
+          </div>
+
+          <div class="second-row">
+            <div class="email-form">
+              <label for="email">EMAIL</label>
+              <br />
+              <input type="email" name="email" id="email" />
+            </div>
+
+            <div class="phone-number-form">
+              <label for="phone-number">PHONE NUMBER</label>
+              <br />
+              <input type="tel" name="phone-number" id="phone-number" />
+            </div>
+          </div>
+
+          <div class="third-row">
+            <div class="password-form">
+              <label for="password">PASSWORD</label>
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="password"
+              />
+              <span class="password-match"></span>
+            </div>
+
+            <div class="confirm-password-form">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <br />
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                class="confirm-password"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="submit-signup-block">
+        <div class="padding-container">
+          <button type="submit" class="submit-button">Create Account</button>
+
+          <p class="p3">
+            Already have an account? <span class="log-in">Log in</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
