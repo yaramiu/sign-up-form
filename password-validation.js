@@ -22,7 +22,7 @@ function removeErrorStyles() {
   confirmPasswordElement.style.border = "2px solid #e5e7eb";
 
   span.textContent = "";
-  span.style.color = black;
+  span.style.color = "black";
 }
 
 function addErrorStyles() {
